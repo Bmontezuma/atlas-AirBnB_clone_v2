@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from flask import Flask
 
 """
 This script starts a Flask web application with three routes
@@ -7,7 +6,7 @@ This script starts a Flask web application with three routes
 - '/hbnb' displays "HBNB"
 - '/c/<text>' displays "C "
 """
-
+from flask import Flask
 app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
