@@ -18,3 +18,13 @@ class State(BaseModel, Base):
     else:
         name = ""
 	cites = []
+
+ if models.storage_t != "db":
+        @property
+        def cities(self):
+            """Getter method to return the list of City objects"""
+            cities_list = []
+            for city in models.storage.all(City).values():
+                if city.state_id == self.id:
+                    cities_list.append(city)
+            return cities_list
