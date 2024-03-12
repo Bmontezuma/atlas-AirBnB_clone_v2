@@ -1,5 +1,3 @@
-[![Listen on Spotify](https://open.spotify.com/playlist/2l20jIM7B9vHQI9Wv8w50u)
-
 
 # ***Concepts***
 
