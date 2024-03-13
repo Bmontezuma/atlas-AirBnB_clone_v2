@@ -18,8 +18,8 @@ def states():
     """
     Display a HTML page with all states.
 
-    Retrieves all states from the storage
-    and sorts them alphabetically by name.
+    Retrieves all states from the storage and sorts
+    them alphabetically by name.
     Then, renders an HTML template that displays each state.
     """
     states = storage.all('State').values()
@@ -32,9 +32,9 @@ def state(state_id):
     """
     Display a HTML page with cities of a specific state.
 
-    Retrieves the state with the given ID from the storage.
-    If the state is found, renders an HTML
-    template that displays the state name
+    Retrieves the state with the given id from the storage.
+    If the state is found, renders a HTML template
+    that displays the state name
     and its associated cities.
     If the state is not found, returns a "Not found!"
     message.
